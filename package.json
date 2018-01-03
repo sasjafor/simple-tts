@@ -1,16 +1,17 @@
 {
-  "name": "simple-tts",
+  "name": "simple-tts-docker",
   "version": "0.1.3",
   "description": "simple TTS API via espeak for use in Dockers",
-  "main": "lib/simple-tts.js",
+  "main": "lib/simple-tts-docker.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sasjafor/simple-tts.git"
+    "url": "git://github.com/sasjafor/simple-tts-docker.git"
   },
   "keywords": [
     "tts",
     "espeak",
-    "text-to-speech"
+    "text-to-speech",
+    "docker"
   ],
   "author": {
     "name":  "Sascha Forster",
