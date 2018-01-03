@@ -1,0 +1,96 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.5.2
+3 info using node@v6.11.4
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/sascha/repos/simple-tts-docker',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/sascha/.npm/simple-tts/0.1.3/package.tgz not in flight; packing
+9 info lifecycle simple-tts@0.1.3~prepublish: simple-tts@0.1.3
+10 silly lifecycle simple-tts@0.1.3~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/sascha/.npm/simple-tts/0.1.3/package.tgz',
+11 verbose tar pack   '/home/sascha/repos/simple-tts-docker' ]
+12 verbose tarball /home/sascha/.npm/simple-tts/0.1.3/package.tgz
+13 verbose folder /home/sascha/repos/simple-tts-docker
+14 verbose addLocalTarball adding from inside cache /home/sascha/.npm/simple-tts/0.1.3/package.tgz
+15 silly cache afterAdd simple-tts@0.1.3
+16 verbose afterAdd /home/sascha/.npm/simple-tts/0.1.3/package/package.json not in flight; writing
+17 verbose afterAdd /home/sascha/.npm/simple-tts/0.1.3/package/package.json written
+18 silly publish { name: 'simple-tts',
+18 silly publish   version: '0.1.3',
+18 silly publish   description: 'simple TTS API via espeak for use in Dockers',
+18 silly publish   main: 'lib/simple-tts.js',
+18 silly publish   repository: { type: 'git', url: 'git://github.com/sasjafor/simple-tts.git' },
+18 silly publish   keywords: [ 'tts', 'espeak', 'text-to-speech' ],
+18 silly publish   author: { name: 'Sascha Forster', email: 'sasjafor@gmail.com' },
+18 silly publish   scripts: { preinstall: 'apt install -y --no-install-recommends espeak lame vorbis-tools' },
+18 silly publish   os: [ 'linux' ],
+18 silly publish   engines: { node: '>= 0.8.x' },
+18 silly publish   dependencies: {},
+18 silly publish   license: 'MIT',
+18 silly publish   gitHead: 'b59ca85c54902431590af3fe59b2f04e4542acfe',
+18 silly publish   readme: 'See https://github.com/JosePedroDias/simple-tts for original package and doc.\n\nThis is a fork with just a small change to make it easier to use in a Dockerfile.\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   bugs: { url: 'https://github.com/sasjafor/simple-tts/issues' },
+18 silly publish   homepage: 'https://github.com/sasjafor/simple-tts#readme',
+18 silly publish   _id: 'simple-tts@0.1.3',
+18 silly publish   _shasum: 'b004eb0e6a849704305b2f32cece7827e670b9c4',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name simple-tts
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/simple-tts
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /home/sascha/.npm/simple-tts/0.1.3/package.tgz
+26 verbose request uri https://registry.npmjs.org/simple-tts
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 13:09:34
+29 verbose request using bearer token for auth
+30 verbose request id 04cefa4d23a67d98
+31 http request PUT https://registry.npmjs.org/simple-tts
+32 http 403 https://registry.npmjs.org/simple-tts
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '104',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Wed, 03 Jan 2018 12:09:34 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-hhn1551-HHN',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1514981374.034969,VS0,VE615',
+33 verbose headers   vary: 'Accept-Encoding, Accept' }
+34 verbose request invalidating /home/sascha/.npm/registry.npmjs.org/simple-tts on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: You do not have permission to publish "simple-tts". Are you logged in as the correct user? : simple-tts
+36 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:106:13)
+36 verbose stack     at Request.emit (events.js:191:7)
+36 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:101:20)
+36 verbose stack     at Request.emit (events.js:188:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid simple-tts
+39 verbose cwd /home/sascha/repos/simple-tts-docker
+40 error Linux 4.13.0-19-generic
+41 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+42 error node v6.11.4
+43 error npm  v3.5.2
+44 error code E403
+45 error You do not have permission to publish "simple-tts". Are you logged in as the correct user? : simple-tts
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
