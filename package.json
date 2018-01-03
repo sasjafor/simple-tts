@@ -18,7 +18,7 @@
     "url":   "http://josepedrodias.com/"
   },
   "scripts": {
-    "preinstall": "sudo apt-get install espeak lame vorbis-tools"
+    "preinstall": "apt install -y --no-install-recommends espeak lame vorbis-tools"
   },
   "os": ["linux"],
   "engines": {
