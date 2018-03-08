@@ -1,6 +1,6 @@
 {
   "name": "simple-tts-docker",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "simple TTS API via espeak for use in Dockers",
   "main": "lib/simple-tts-docker.js",
   "repository": {
