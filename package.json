@@ -1,6 +1,6 @@
 {
   "name": "simple-tts-docker",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "simple TTS API via espeak for use in Dockers",
   "main": "lib/simple-tts-docker.js",
   "repository": {
@@ -16,9 +16,6 @@
   "author": {
     "name": "Sascha Forster",
     "email": "sasjafor@gmail.com"
-  },
-  "scripts": {
-    "preinstall": "apt install -y --no-install-recommends espeak lame vorbis-tools"
   },
   "os": [
     "linux"
